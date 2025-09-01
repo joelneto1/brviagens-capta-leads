@@ -37,15 +37,23 @@ const BRViagensClube = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-20 bg-white relative overflow-hidden">
+      <section className="pt-20 bg-gradient-to-br from-blue-50 to-orange-50 relative overflow-hidden">
         {/* Travel-themed background pattern */}
         <div 
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23da8418' fill-opacity='0.3'%3E%3Cpath d='M20 20l5 2-2 5-5-2zm25 15l8 3-3 8-8-3zm30 25l6 2-2 6-6-2z'/%3E%3Cpath d='M15 50c0-2 1-4 3-5l10 4c2 1 3 3 3 5s-1 4-3 5l-10-4c-2-1-3-3-3-5zm40 20c0-1.5 0.8-3 2.2-3.8l7 2.8c1.4 0.8 2.3 2.3 2.3 3.8s-0.9 3-2.3 3.8l-7-2.8c-1.4-0.8-2.2-2.3-2.2-3.8z'/%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '100px 100px'
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23da8418' fill-opacity='0.4'%3E%3Cpath d='M20 20l5 2-2 5-5-2zm25 15l8 3-3 8-8-3zm30 25l6 2-2 6-6-2z'/%3E%3Cpath d='M15 50c0-2 1-4 3-5l10 4c2 1 3 3 3 5s-1 4-3 5l-10-4c-2-1-3-3-3-5zm40 20c0-1.5 0.8-3 2.2-3.8l7 2.8c1.4 0.8 2.3 2.3 2.3 3.8s-0.9 3-2.3 3.8l-7-2.8c-1.4-0.8-2.2-2.3-2.2-3.8z'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '80px 80px'
           }}
         ></div>
+        
+        {/* Additional decorative elements */}
+        <div className="absolute top-20 right-10 opacity-20">
+          <Plane className="w-12 h-12 text-travel-blue transform rotate-45" />
+        </div>
+        <div className="absolute bottom-20 left-10 opacity-20">
+          <Plane className="w-8 h-8 text-travel-orange transform -rotate-12" />
+        </div>
         
         <div className="container mx-auto px-4 py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -59,13 +67,13 @@ const BRViagensClube = () => {
                 />
                 
                 {/* Speech Bubble */}
-                <div className="absolute top-4 left-4 lg:top-8 lg:left-8 animate-fade-in">
+                <div className="absolute bottom-4 left-2 lg:bottom-8 lg:left-4 animate-fade-in">
                   <div className="relative bg-white p-4 rounded-2xl shadow-lg max-w-xs lg:max-w-sm border border-gray-100">
                     <p className="text-sm lg:text-base text-travel-blue italic leading-relaxed">
                       "Descobri com a BR Viagens Clube que é possível viajar com muito mais conforto pagando muito menos do que eu imaginei."
                     </p>
                     {/* Speech bubble tail */}
-                    <div className="absolute bottom-[-8px] left-8 w-4 h-4 bg-white border-b border-r border-gray-100 transform rotate-45"></div>
+                    <div className="absolute top-[-8px] left-8 w-4 h-4 bg-white border-t border-l border-gray-100 transform rotate-45"></div>
                   </div>
                 </div>
               </div>
