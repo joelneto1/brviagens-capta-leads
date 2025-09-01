@@ -38,13 +38,13 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Travel Brand Colors */
-    --travel-orange: 28 84% 47%;
-    --travel-blue: 207 100% 21%;
+    /* Travel Brand Colors - Updated to match logo */
+    --travel-orange: 24 93% 53%;
+    --travel-blue: 201 89% 35%;
     --travel-white: 0 0% 100%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(207 100% 21% / 0.9), hsl(28 84% 47% / 0.8));
+    --gradient-hero: linear-gradient(135deg, hsl(201 89% 35% / 0.95), hsl(24 93% 53% / 0.85));
     --gradient-accent: linear-gradient(90deg, hsl(var(--travel-orange)), hsl(28 84% 55%));
     
     /* Shadows */
