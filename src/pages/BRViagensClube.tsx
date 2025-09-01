@@ -4,15 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink } from "lucide-react";
 import heroImage from "@/assets/hero-beach.jpg";
+// Note: Logo will be available after proper upload
 const BRViagensClube = () => {
   console.log('[BRViagens] Página carregada');
   const handleWhatsAppClick = () => {
     console.log('[BRViagens] Clique WhatsApp');
     window.open('https://wa.me/5511999999999', '_blank');
-  };
-  const handleTelegramClick = () => {
-    console.log('[BRViagens] Clique Telegram');
-    window.open('https://t.me/brviagensclube', '_blank');
   };
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -23,6 +20,9 @@ const BRViagensClube = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <div className="mb-8">
+              <div className="bg-white/10 rounded-full p-4 inline-block mb-6">
+                <Plane className="h-16 md:h-20 lg:h-24 w-16 md:w-20 lg:w-24 text-travel-orange" />
+              </div>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-shadow-lg">
                 BR VIAGENS CLUBE
               </h1>
@@ -42,12 +42,9 @@ const BRViagensClube = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-travel-blue mb-8">
                 Escolha abaixo o Grupo para entrar
               </h3>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <TravelButton variant="whatsapp" size="lg" onClick={handleWhatsAppClick} className="flex-1 sm:flex-none">
-                  ✈️ GRUPO DO WHATSAPP
-                </TravelButton>
-                <TravelButton variant="telegram" size="lg" onClick={handleTelegramClick} className="flex-1 sm:flex-none">
-                  ✈️ GRUPO DO TELEGRAM
+              <div className="flex justify-center">
+                <TravelButton variant="whatsapp" size="lg" onClick={handleWhatsAppClick} className="max-w-md">
+                  ✈️ ENTRAR NO GRUPO DO WHATSAPP
                 </TravelButton>
               </div>
             </div>
@@ -240,14 +237,11 @@ const BRViagensClube = () => {
             
             <div className="mb-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-8">
-                👇 Escolha abaixo o Grupo para entrar 👇
+                👇 Entre agora no nosso grupo exclusivo 👇
               </h3>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
-                <TravelButton variant="whatsapp-outline" size="lg" onClick={handleWhatsAppClick} className="flex-1 sm:flex-none bg-white hover:bg-travel-blue">
-                  ✈️ GRUPO DO WHATSAPP
-                </TravelButton>
-                <TravelButton variant="telegram-outline" size="lg" onClick={handleTelegramClick} className="flex-1 sm:flex-none bg-white hover:bg-travel-blue">
-                  ✈️ GRUPO DO TELEGRAM
+              <div className="flex justify-center max-w-md mx-auto">
+                <TravelButton variant="whatsapp-outline" size="lg" onClick={handleWhatsAppClick} className="bg-white hover:bg-travel-blue w-full">
+                  ✈️ ENTRAR NO GRUPO DO WHATSAPP
                 </TravelButton>
               </div>
             </div>
@@ -259,7 +253,12 @@ const BRViagensClube = () => {
       <footer className="bg-travel-blue text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6">
-            <div className="text-xl font-bold">BR VIAGENS CLUBE ®</div>
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="bg-travel-orange/20 rounded-full p-2">
+                <Plane className="h-8 w-8 text-travel-orange" />
+              </div>
+              <div className="text-xl font-bold">BR VIAGENS CLUBE ®</div>
+            </div>
             <div className="space-y-2 text-sm">
               <p>CNPJ: 42.292.890/0001-00</p>
               <div className="flex items-center justify-center gap-2">
