@@ -19,11 +19,7 @@ const BRViagensClube = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <div className="mb-8">
-              <img 
-                src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" 
-                alt="BR Viagens Clube" 
-                className="h-32 md:h-40 lg:h-48 mx-auto mb-6"
-              />
+              <img src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" alt="BR Viagens Clube" className="h-32 md:h-40 lg:h-48 mx-auto mb-6" />
               <div className="w-24 h-1 bg-travel-orange mx-auto mb-6"></div>
             </div>
             
@@ -89,9 +85,7 @@ const BRViagensClube = () => {
                 <h3 className="text-xl font-bold text-travel-blue mb-4">
                   Economize em todas as viagens
                 </h3>
-                <p className="text-gray-600">
-                  Enviamos vários cupons de desconto, passagens em promoção e ofertas relâmpago todos os dias.
-                </p>
+                <p className="text-gray-600">Enviamos várias oportunidades com desconto em passagens, hospedagens e pacotes todos os dias.</p>
               </CardContent>
             </Card>
             
@@ -103,9 +97,7 @@ const BRViagensClube = () => {
                 <h3 className="text-xl font-bold text-travel-blue mb-4">
                   Segurança
                 </h3>
-                <p className="text-gray-600">
-                  Procuramos ofertas apenas de grandes companhias e sites confiáveis.
-                </p>
+                <p className="text-gray-600">Procuramos ofertas apenas de grandes companhias e com descontos reais.</p>
               </CardContent>
             </Card>
             
@@ -117,9 +109,7 @@ const BRViagensClube = () => {
                 <h3 className="text-xl font-bold text-travel-blue mb-4">
                   Os melhores destinos do Brasil e do Mundo
                 </h3>
-                <p className="text-gray-600">
-                  Ofertas para destinos incríveis: Nordeste, Europa, EUA, América do Sul e muito mais.
-                </p>
+                <p className="text-gray-600">Ofertas para destinos incríveis: Brasil, Europa, EUA, América do Sul e muito mais.</p>
               </CardContent>
             </Card>
           </div>
@@ -252,11 +242,7 @@ const BRViagensClube = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6">
             <div className="flex justify-center mb-4">
-              <img 
-                src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" 
-                alt="BR Viagens Clube" 
-                className="h-16"
-              />
+              <img src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" alt="BR Viagens Clube" className="h-16" />
             </div>
             <div className="space-y-2 text-sm">
               <p>CNPJ: 42.292.890/0001-00</p>
