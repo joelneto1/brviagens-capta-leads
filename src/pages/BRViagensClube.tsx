@@ -38,12 +38,12 @@ const BRViagensClube = () => {
 
       {/* Hero Section */}
       <section className="pt-20 bg-white relative overflow-hidden">
-        {/* Subtle geometric pattern background */}
+        {/* Travel-themed background pattern */}
         <div 
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '60px 60px'
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23da8418' fill-opacity='0.3'%3E%3Cpath d='M20 20l5 2-2 5-5-2zm25 15l8 3-3 8-8-3zm30 25l6 2-2 6-6-2z'/%3E%3Cpath d='M15 50c0-2 1-4 3-5l10 4c2 1 3 3 3 5s-1 4-3 5l-10-4c-2-1-3-3-3-5zm40 20c0-1.5 0.8-3 2.2-3.8l7 2.8c1.4 0.8 2.3 2.3 2.3 3.8s-0.9 3-2.3 3.8l-7-2.8c-1.4-0.8-2.2-2.3-2.2-3.8z'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '100px 100px'
           }}
         ></div>
         
@@ -57,21 +57,28 @@ const BRViagensClube = () => {
                   alt="Família usando BR Viagens Clube"
                   className="w-full rounded-2xl shadow-lg object-cover object-right"
                 />
+                
+                {/* Speech Bubble */}
+                <div className="absolute top-4 left-4 lg:top-8 lg:left-8 animate-fade-in">
+                  <div className="relative bg-white p-4 rounded-2xl shadow-lg max-w-xs lg:max-w-sm border border-gray-100">
+                    <p className="text-sm lg:text-base text-travel-blue italic leading-relaxed">
+                      "Descobri com a BR Viagens Clube que é possível viajar com muito mais conforto pagando muito menos do que eu imaginei."
+                    </p>
+                    {/* Speech bubble tail */}
+                    <div className="absolute bottom-[-8px] left-8 w-4 h-4 bg-white border-b border-r border-gray-100 transform rotate-45"></div>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Right Column - Value Proposition and CTA */}
             <div className="space-y-6">
-              <div className="text-left text-travel-blue text-lg italic mb-4">
-                "Descobri com a BR Viagens Clube que é possível viajar com muito mais conforto pagando muito menos do que eu imaginei."
-              </div>
-              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-travel-blue leading-tight">
-                Economize até 70% nas suas próximas viagens
+                Economize de 30 a 70% nas suas próximas viagens
               </h1>
               
               <h2 className="text-xl md:text-2xl text-travel-blue">
-                Acesse <span className="text-travel-orange font-bold">gratuitamente</span> a nossa comunidade e comece a receber ofertas exclusivas imediatamente.
+                Acesse <span className="text-travel-orange font-bold">gratuitamente</span> o nosso grupo de WhatsApp e receba ofertas exclusivas imediatamente.
               </h2>
               
               <div className="pt-4">
