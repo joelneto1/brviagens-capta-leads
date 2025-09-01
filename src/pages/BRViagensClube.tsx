@@ -4,27 +4,21 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink } from "lucide-react";
 import heroImage from "@/assets/hero-beach.jpg";
-
 const BRViagensClube = () => {
   console.log('[BRViagens] Página carregada');
-
   const handleWhatsAppClick = () => {
     console.log('[BRViagens] Clique WhatsApp');
     window.open('https://wa.me/5511999999999', '_blank');
   };
-
   const handleTelegramClick = () => {
     console.log('[BRViagens] Clique Telegram');
     window.open('https://t.me/brviagensclube', '_blank');
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-gradient-hero"></div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
@@ -49,20 +43,10 @@ const BRViagensClube = () => {
                 Escolha abaixo o Grupo para entrar
               </h3>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <TravelButton 
-                  variant="whatsapp" 
-                  size="lg"
-                  onClick={handleWhatsAppClick}
-                  className="flex-1 sm:flex-none"
-                >
+                <TravelButton variant="whatsapp" size="lg" onClick={handleWhatsAppClick} className="flex-1 sm:flex-none">
                   ✈️ GRUPO DO WHATSAPP
                 </TravelButton>
-                <TravelButton 
-                  variant="telegram" 
-                  size="lg"
-                  onClick={handleTelegramClick}
-                  className="flex-1 sm:flex-none"
-                >
+                <TravelButton variant="telegram" size="lg" onClick={handleTelegramClick} className="flex-1 sm:flex-none">
                   ✈️ GRUPO DO TELEGRAM
                 </TravelButton>
               </div>
@@ -82,11 +66,9 @@ const BRViagensClube = () => {
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center opacity-70">
-            {['Azul', 'LATAM', 'GOL', 'Booking.com', 'Decolar', 'Accor', 'Hilton'].map((brand) => (
-              <div key={brand} className="flex items-center justify-center h-16 text-gray-500 font-bold text-lg">
+            {['Azul', 'LATAM', 'GOL', 'Booking.com', 'Decolar', 'Accor', 'Hilton'].map(brand => <div key={brand} className="flex items-center justify-center h-16 text-gray-500 font-bold text-lg">
                 {brand}
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -178,11 +160,9 @@ const BRViagensClube = () => {
                 Viagens dos nossos usuários
               </h4>
               <div className="grid grid-cols-2 gap-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+                {[1, 2, 3, 4].map(i => <div key={i} className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
                     <Users className="w-12 h-12 text-gray-400" />
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -263,20 +243,10 @@ const BRViagensClube = () => {
                 👇 Escolha abaixo o Grupo para entrar 👇
               </h3>
               <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
-                <TravelButton 
-                  variant="whatsapp-outline" 
-                  size="lg"
-                  onClick={handleWhatsAppClick}
-                  className="flex-1 sm:flex-none bg-white hover:bg-travel-blue"
-                >
+                <TravelButton variant="whatsapp-outline" size="lg" onClick={handleWhatsAppClick} className="flex-1 sm:flex-none bg-white hover:bg-travel-blue">
                   ✈️ GRUPO DO WHATSAPP
                 </TravelButton>
-                <TravelButton 
-                  variant="telegram-outline" 
-                  size="lg"
-                  onClick={handleTelegramClick}
-                  className="flex-1 sm:flex-none bg-white hover:bg-travel-blue"
-                >
+                <TravelButton variant="telegram-outline" size="lg" onClick={handleTelegramClick} className="flex-1 sm:flex-none bg-white hover:bg-travel-blue">
                   ✈️ GRUPO DO TELEGRAM
                 </TravelButton>
               </div>
@@ -291,7 +261,7 @@ const BRViagensClube = () => {
           <div className="text-center space-y-6">
             <div className="text-xl font-bold">BR VIAGENS CLUBE ®</div>
             <div className="space-y-2 text-sm">
-              <p>CNPJ: XX.XXX.XXX/0001-XX</p>
+              <p>CNPJ: 42.292.890/0001-00</p>
               <div className="flex items-center justify-center gap-2">
                 <Mail className="w-4 h-4" />
                 <a href="mailto:contato@brviagensclube.com.br" className="hover:text-travel-orange transition-colors">
@@ -311,8 +281,6 @@ const BRViagensClube = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default BRViagensClube;
