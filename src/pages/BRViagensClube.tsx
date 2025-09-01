@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink } from "lucide-react";
 import heroImage from "@/assets/hero-beach.jpg";
-// Note: Logo will be available after proper upload
 const BRViagensClube = () => {
   console.log('[BRViagens] Página carregada');
   const handleWhatsAppClick = () => {
@@ -20,12 +19,11 @@ const BRViagensClube = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <div className="mb-8">
-              <div className="bg-white/10 rounded-full p-4 inline-block mb-6">
-                <Plane className="h-16 md:h-20 lg:h-24 w-16 md:w-20 lg:w-24 text-travel-orange" />
-              </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-shadow-lg">
-                BR VIAGENS CLUBE
-              </h1>
+              <img 
+                src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" 
+                alt="BR Viagens Clube" 
+                className="h-32 md:h-40 lg:h-48 mx-auto mb-6"
+              />
               <div className="w-24 h-1 bg-travel-orange mx-auto mb-6"></div>
             </div>
             
@@ -253,11 +251,12 @@ const BRViagensClube = () => {
       <footer className="bg-travel-blue text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="bg-travel-orange/20 rounded-full p-2">
-                <Plane className="h-8 w-8 text-travel-orange" />
-              </div>
-              <div className="text-xl font-bold">BR VIAGENS CLUBE ®</div>
+            <div className="flex justify-center mb-4">
+              <img 
+                src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" 
+                alt="BR Viagens Clube" 
+                className="h-16"
+              />
             </div>
             <div className="space-y-2 text-sm">
               <p>CNPJ: 42.292.890/0001-00</p>
