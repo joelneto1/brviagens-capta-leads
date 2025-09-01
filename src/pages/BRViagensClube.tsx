@@ -3,11 +3,11 @@ import { TravelButton } from "@/components/ui/travel-button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink, MessageCircle, Search } from "lucide-react";
-import personSmartphone from "@/assets/person-smartphone.jpg";
+import familySmartphone from "@/assets/family-smartphone.jpg";
 const BRViagensClube = () => {
   console.log('[BRViagens] Página carregada');
   const handleWhatsAppClick = () => {
-    console.log('[BRViagens] Clique WhatsApp');
+    console.log('[BRViagens] CTA WhatsApp clicado');
     window.open('https://wa.me/5511999999999', '_blank');
   };
   return <div className="min-h-screen bg-white">
@@ -53,29 +53,19 @@ const BRViagensClube = () => {
             <div className="relative">
               <div className="relative max-w-md mx-auto">
                 <img 
-                  src={personSmartphone} 
-                  alt="Pessoa usando BR Viagens Clube"
-                  className="w-full rounded-2xl shadow-lg"
+                  src={familySmartphone} 
+                  alt="Família usando BR Viagens Clube"
+                  className="w-full rounded-2xl shadow-lg object-cover object-right"
                 />
-                
-                {/* Speech Bubble */}
-                <div className="absolute -right-4 top-8 bg-white p-4 rounded-2xl shadow-lg border max-w-xs">
-                  <div className="text-sm text-gray-700 leading-relaxed">
-                    "Descobri com o BR VIAGENS CLUBE que é possível viajar com muito mais conforto pagando muito menos do que eu imaginei."
-                  </div>
-                  {/* Arrow pointing to person */}
-                  <div className="absolute -left-2 top-6 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-r-8 border-r-white"></div>
-                </div>
-                
-                {/* Name Tag */}
-                <div className="absolute -bottom-4 left-4 bg-travel-orange text-white px-4 py-2 rounded-full shadow-lg">
-                  <span className="font-semibold text-sm">João Silva, Membro do Clube</span>
-                </div>
               </div>
             </div>
 
             {/* Right Column - Value Proposition and CTA */}
             <div className="space-y-6">
+              <div className="text-left text-travel-blue text-lg italic mb-4">
+                "Descobri com a BR Viagens Clube que é possível viajar com muito mais conforto pagando muito menos do que eu imaginei."
+              </div>
+              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-travel-blue leading-tight">
                 Economize até 70% nas suas próximas viagens
               </h1>
@@ -90,9 +80,10 @@ const BRViagensClube = () => {
                   size="lg" 
                   onClick={handleWhatsAppClick} 
                   className="w-full md:w-auto bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-4 px-8 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  aria-label="Entrar no nosso grupo de WhatsApp"
                 >
                   <MessageCircle className="w-6 h-6 mr-2" />
-                  Começar a receber ofertas agora!
+                  ENTRE EM NOSSO GRUPO DE WHATSAPP
                 </TravelButton>
               </div>
               
@@ -115,11 +106,11 @@ const BRViagensClube = () => {
             As Melhores Companhias e Hotéis do Mundo
           </h2>
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Divulgamos promoções de parceiros confiáveis e seguros.
+            Divulgamos promoções de parceiros diariamente em nossos grupos.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center opacity-70">
-            {['Azul', 'LATAM', 'GOL', 'Booking.com', 'Decolar', 'Accor', 'Hilton'].map(brand => <div key={brand} className="flex items-center justify-center h-16 text-gray-500 font-bold text-lg">
+            {['LATAM', 'GOL', 'AZUL', 'AMERICAN AIRLINES', 'IHG', 'ACCOR', 'HILTON'].map(brand => <div key={brand} className="flex items-center justify-center h-16 text-gray-500 font-bold text-sm lg:text-lg">
                 {brand}
               </div>)}
           </div>
@@ -131,7 +122,7 @@ const BRViagensClube = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-travel-blue mb-4">
-              Veja as vantagens do BR VIAGENS CLUBE
+              Veja as vantagens da BR VIAGENS CLUBE
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Nós garantimos que, com a gente, você sempre irá economizar.
@@ -184,19 +175,19 @@ const BRViagensClube = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h3 className="text-3xl md:text-4xl font-bold text-travel-blue">
-                A MAIOR COMUNIDADE DE VIAJANTES ECONÔMICOS DO BRASIL
+                FAÇA PARTE DOS NOSSOS GRUPOS DE WHATSAPP, IGUAL AOS NOSSOS CLIENTES, E VIAJE GASTANDO MENOS.
               </h3>
               <p className="text-xl text-travel-orange font-bold">
-                +500.000 viajantes já economizaram conosco
+                +1.500 viajantes já economizaram conosco.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-gray-50 rounded-xl">
-                  <div className="text-3xl font-black text-travel-blue mb-2">+1mi</div>
+                  <div className="text-3xl font-black text-travel-blue mb-2">+ de 500</div>
                   <div className="text-gray-600">participantes</div>
                 </div>
                 <div className="text-center p-6 bg-gray-50 rounded-xl">
-                  <div className="text-3xl font-black text-travel-orange mb-2">+50</div>
+                  <div className="text-3xl font-black text-travel-orange mb-2">+10</div>
                   <div className="text-gray-600">promoções diárias</div>
                 </div>
               </div>
@@ -204,7 +195,7 @@ const BRViagensClube = () => {
             
             <div>
               <h4 className="text-2xl font-bold text-travel-blue mb-8 text-center">
-                Viagens dos nossos usuários
+                Feedback dos nossos clientes!
               </h4>
               <div className="grid grid-cols-2 gap-4">
                 {[1, 2, 3, 4].map(i => <div key={i} className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
