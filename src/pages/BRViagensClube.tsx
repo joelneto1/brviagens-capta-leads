@@ -2,46 +2,107 @@ import React from "react";
 import { TravelButton } from "@/components/ui/travel-button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink, MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-beach.jpg";
+import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink, MessageCircle, Search } from "lucide-react";
+import personSmartphone from "@/assets/person-smartphone.jpg";
 const BRViagensClube = () => {
   console.log('[BRViagens] Página carregada');
   const handleWhatsAppClick = () => {
     console.log('[BRViagens] Clique WhatsApp');
     window.open('https://wa.me/5511999999999', '_blank');
   };
-  return <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" 
+              alt="BR Viagens Clube" 
+              className="h-10 md:h-12"
+            />
+          </div>
+          
+          {/* Navigation */}
+          <div className="flex items-center gap-6">
+            <a 
+              href="#contato" 
+              className="text-travel-blue hover:text-travel-orange transition-colors font-medium"
+            >
+              FALE CONOSCO
+            </a>
+            <Search className="w-5 h-5 text-travel-blue cursor-pointer hover:text-travel-orange transition-colors" />
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(${heroImage})`
-    }}>
-        <div className="absolute inset-0 bg-gradient-hero"></div>
-        <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            <div className="mb-8">
-              <img src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" alt="BR Viagens Clube" className="h-32 md:h-40 lg:h-48 mx-auto mb-6" />
-              <div className="w-24 h-1 bg-travel-orange mx-auto mb-6"></div>
+      <section className="pt-20 bg-white relative overflow-hidden">
+        {/* Subtle geometric pattern background */}
+        <div 
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '60px 60px'
+          }}
+        ></div>
+        
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Social Proof and Visual */}
+            <div className="relative">
+              <div className="relative max-w-md mx-auto">
+                <img 
+                  src={personSmartphone} 
+                  alt="Pessoa usando BR Viagens Clube"
+                  className="w-full rounded-2xl shadow-lg"
+                />
+                
+                {/* Speech Bubble */}
+                <div className="absolute -right-4 top-8 bg-white p-4 rounded-2xl shadow-lg border max-w-xs">
+                  <div className="text-sm text-gray-700 leading-relaxed">
+                    "Descobri com o BR VIAGENS CLUBE que é possível viajar com muito mais conforto pagando muito menos do que eu imaginei."
+                  </div>
+                  {/* Arrow pointing to person */}
+                  <div className="absolute -left-2 top-6 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-r-8 border-r-white"></div>
+                </div>
+                
+                {/* Name Tag */}
+                <div className="absolute -bottom-4 left-4 bg-travel-orange text-white px-4 py-2 rounded-full shadow-lg">
+                  <span className="font-semibold text-sm">João Silva, Membro do Clube</span>
+                </div>
+              </div>
             </div>
-            
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Você ama viajar pagando pouco?
-            </h2>
-            
-            <p className="text-xl md:text-2xl lg:text-3xl font-medium mb-12 max-w-3xl mx-auto leading-relaxed">
-              Nós encontramos as melhores ofertas de passagens e pacotes de viagem e 
-              publicamos em nossos Grupos exclusivos.
-            </p>
-            
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 md:p-12 max-w-2xl mx-auto shadow-large">
-              <h3 className="text-2xl md:text-3xl font-bold text-travel-blue mb-8">
-                Escolha abaixo o Grupo para entrar
-              </h3>
-              <div className="flex justify-center">
-                <TravelButton variant="whatsapp" size="lg" onClick={handleWhatsAppClick} className="max-w-md">
-                  <MessageCircle className="w-6 h-6" />
-                  ENTRAR NO GRUPO DO WHATSAPP
+
+            {/* Right Column - Value Proposition and CTA */}
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-travel-blue leading-tight">
+                Economize até 70% nas suas próximas viagens
+              </h1>
+              
+              <h2 className="text-xl md:text-2xl text-travel-blue">
+                Acesse <span className="text-travel-orange font-bold">gratuitamente</span> a nossa comunidade e comece a receber ofertas exclusivas imediatamente.
+              </h2>
+              
+              <div className="pt-4">
+                <TravelButton 
+                  variant="whatsapp" 
+                  size="lg" 
+                  onClick={handleWhatsAppClick} 
+                  className="w-full md:w-auto bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-4 px-8 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <MessageCircle className="w-6 h-6 mr-2" />
+                  Começar a receber ofertas agora!
                 </TravelButton>
               </div>
+              
+              <p className="text-travel-blue font-medium text-lg">
+                Oportunidades incríveis. Preços reais.
+              </p>
+              
+              <p className="text-gray-600 text-sm">
+                Mais de 2.000 pessoas já recebem nossas ofertas diariamente.
+              </p>
             </div>
           </div>
         </div>

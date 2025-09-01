@@ -38,9 +38,10 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Travel Brand Colors - Updated to match logo */
-    --travel-orange: 24 93% 53%;
-    --travel-blue: 201 89% 35%;
+    /* Travel Brand Colors - BR Viagens Clube */
+    --travel-orange: 24 87% 47%; /* #da8418 */
+    --travel-blue: 204 94% 22%; /* #0b4569 */
+    --travel-gray-pattern: 210 20% 96%; /* Very light gray for subtle pattern */
     --travel-white: 0 0% 100%;
     
     /* Gradients */
