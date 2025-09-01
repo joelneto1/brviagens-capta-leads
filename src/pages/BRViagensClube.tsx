@@ -2,7 +2,7 @@ import React from "react";
 import { TravelButton } from "@/components/ui/travel-button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink, MessageCircle } from "lucide-react";
+import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink } from "lucide-react";
 import heroImage from "@/assets/hero-beach.jpg";
 const BRViagensClube = () => {
   console.log('[BRViagens] Página carregada');
@@ -38,8 +38,7 @@ const BRViagensClube = () => {
               </h3>
               <div className="flex justify-center">
                 <TravelButton variant="whatsapp" size="lg" onClick={handleWhatsAppClick} className="max-w-md">
-                  <MessageCircle className="w-6 h-6" />
-                  ENTRAR NO GRUPO DO WHATSAPP
+                  ✈️ ENTRAR NO GRUPO DO WHATSAPP
                 </TravelButton>
               </div>
             </div>
@@ -230,8 +229,7 @@ const BRViagensClube = () => {
               </h3>
               <div className="flex justify-center max-w-md mx-auto">
                 <TravelButton variant="whatsapp-outline" size="lg" onClick={handleWhatsAppClick} className="bg-white hover:bg-travel-blue w-full">
-                  <MessageCircle className="w-6 h-6" />
-                  ENTRAR NO GRUPO DO WHATSAPP
+                  ✈️ ENTRAR NO GRUPO DO WHATSAPP
                 </TravelButton>
               </div>
             </div>
