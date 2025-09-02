@@ -90,16 +90,82 @@ const BRViagensClube = () => {
               </h2>
               
               <div className="pt-2 md:pt-4">
-                <TravelButton 
-                  variant="whatsapp" 
-                  size="lg" 
-                  onClick={handleWhatsAppClick} 
-                  className="w-full md:w-auto bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 md:py-4 px-6 md:px-8 text-base md:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                  aria-label="Entrar no nosso grupo de WhatsApp"
-                >
-                  <MessageCircle className="w-5 h-5 md:w-6 md:h-6 mr-2" />
-                  ENTRE EM NOSSO GRUPO DE WHATSAPP
-                </TravelButton>
+                <div className="space-y-3 md:space-y-4">
+                  <p className="text-travel-blue font-medium text-center lg:text-left text-sm md:text-base mb-3 md:mb-4">
+                    Escolha sua cidade:
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3 md:gap-4 max-w-2xl mx-auto lg:mx-0">
+                    <TravelButton 
+                      variant="whatsapp" 
+                      size="lg" 
+                      onClick={() => {
+                        console.log('[BRViagens] CTA WhatsApp Maceió clicado');
+                        window.open('https://wa.me/5511999999999', '_blank');
+                      }} 
+                      className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                      aria-label="Entrar no grupo de WhatsApp de Maceió"
+                    >
+                      <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                      GRUPO PROMOÇÕES - MACEIÓ
+                    </TravelButton>
+                    
+                    <TravelButton 
+                      variant="whatsapp" 
+                      size="lg" 
+                      onClick={() => {
+                        console.log('[BRViagens] CTA WhatsApp Aracaju clicado');
+                        window.open('https://wa.me/5511999999999', '_blank');
+                      }} 
+                      className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                      aria-label="Entrar no grupo de WhatsApp de Aracaju"
+                    >
+                      <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                      GRUPO PROMOÇÕES - ARACAJU
+                    </TravelButton>
+                    
+                    <TravelButton 
+                      variant="whatsapp" 
+                      size="lg" 
+                      onClick={() => {
+                        console.log('[BRViagens] CTA WhatsApp Recife clicado');
+                        window.open('https://wa.me/5511999999999', '_blank');
+                      }} 
+                      className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                      aria-label="Entrar no grupo de WhatsApp de Recife"
+                    >
+                      <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                      GRUPO PROMOÇÕES - RECIFE
+                    </TravelButton>
+                    
+                    <TravelButton 
+                      variant="whatsapp" 
+                      size="lg" 
+                      onClick={() => {
+                        console.log('[BRViagens] CTA WhatsApp Fortaleza clicado');
+                        window.open('https://wa.me/5511999999999', '_blank');
+                      }} 
+                      className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                      aria-label="Entrar no grupo de WhatsApp de Fortaleza"
+                    >
+                      <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                      GRUPO PROMOÇÕES - FORTALEZA
+                    </TravelButton>
+                    
+                    <TravelButton 
+                      variant="whatsapp" 
+                      size="lg" 
+                      onClick={() => {
+                        console.log('[BRViagens] CTA WhatsApp São Paulo clicado');
+                        window.open('https://wa.me/5511999999999', '_blank');
+                      }} 
+                      className="w-full md:col-span-2 lg:col-span-1 xl:col-span-2 bg-travel-blue hover:bg-travel-blue/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                      aria-label="Entrar no grupo de WhatsApp de São Paulo"
+                    >
+                      <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                      GRUPO PROMOÇÕES - SÃO PAULO
+                    </TravelButton>
+                  </div>
+                </div>
               </div>
               
               <p className="text-travel-blue font-medium text-base md:text-lg">
@@ -319,12 +385,72 @@ const BRViagensClube = () => {
             
             <div className="mb-6 md:mb-8">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 md:mb-8">
-                👇 Entre agora no nosso grupo exclusivo 👇
+                👇 Escolha sua cidade e entre no grupo exclusivo 👇
               </h3>
-              <div className="flex justify-center max-w-sm md:max-w-md mx-auto">
-                <TravelButton variant="whatsapp-outline" size="lg" onClick={handleWhatsAppClick} className="bg-white hover:bg-travel-blue w-full py-3 md:py-4 text-base md:text-lg">
-                  <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
-                  ENTRAR NO GRUPO DO WHATSAPP
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 max-w-4xl mx-auto">
+                <TravelButton 
+                  variant="whatsapp-outline" 
+                  size="lg" 
+                  onClick={() => {
+                    console.log('[BRViagens] CTA WhatsApp Maceió clicado');
+                    window.open('https://wa.me/5511999999999', '_blank');
+                  }} 
+                  className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
+                >
+                  <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                  MACEIÓ
+                </TravelButton>
+                
+                <TravelButton 
+                  variant="whatsapp-outline" 
+                  size="lg" 
+                  onClick={() => {
+                    console.log('[BRViagens] CTA WhatsApp Aracaju clicado');
+                    window.open('https://wa.me/5511999999999', '_blank');
+                  }} 
+                  className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
+                >
+                  <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                  ARACAJU
+                </TravelButton>
+                
+                <TravelButton 
+                  variant="whatsapp-outline" 
+                  size="lg" 
+                  onClick={() => {
+                    console.log('[BRViagens] CTA WhatsApp Recife clicado');
+                    window.open('https://wa.me/5511999999999', '_blank');
+                  }} 
+                  className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
+                >
+                  <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                  RECIFE
+                </TravelButton>
+                
+                <TravelButton 
+                  variant="whatsapp-outline" 
+                  size="lg" 
+                  onClick={() => {
+                    console.log('[BRViagens] CTA WhatsApp Fortaleza clicado');
+                    window.open('https://wa.me/5511999999999', '_blank');
+                  }} 
+                  className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
+                >
+                  <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                  FORTALEZA
+                </TravelButton>
+                
+                <TravelButton 
+                  variant="whatsapp-outline" 
+                  size="lg" 
+                  onClick={() => {
+                    console.log('[BRViagens] CTA WhatsApp São Paulo clicado');
+                    window.open('https://wa.me/5511999999999', '_blank');
+                  }} 
+                  className="bg-white hover:bg-travel-orange text-travel-orange hover:text-white w-full md:col-span-2 lg:col-span-1 py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300 border-2 border-travel-orange"
+                >
+                  <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                  SÃO PAULO
                 </TravelButton>
               </div>
             </div>
