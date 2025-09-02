@@ -340,22 +340,22 @@ const BRViagensClube = () => {
               <img src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" alt="BR Viagens Clube" className="h-16" />
             </div>
             <div className="space-y-2 text-sm">
-              <p>CNPJ: 42.292.890/0001-00</p>
+              <p className="text-travel-blue font-medium">CNPJ: 42.292.890/0001-00</p>
               <div className="flex items-center justify-center gap-2">
-                <Mail className="w-4 h-4" />
-                <a href="mailto:contato@brviagensclube.com.br" className="hover:text-travel-orange transition-colors">
+                <Mail className="w-4 h-4 text-travel-orange" />
+                <a href="mailto:contato@brviagensclube.com.br" className="hover:text-travel-orange transition-colors text-travel-blue">
                   contato@brviagensclube.com.br
                 </a>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <ExternalLink className="w-4 h-4" />
-                <a href="#" className="hover:text-travel-orange transition-colors">
+                <ExternalLink className="w-4 h-4 text-travel-orange" />
+                <a href="#" className="hover:text-travel-orange transition-colors text-travel-blue">
                   Política de Privacidade
                 </a>
               </div>
             </div>
-            <div className="border-t border-white/20 pt-6 text-xs">
-              <p>Copyright © 2024 BR VIAGENS CLUBE. Todos os direitos reservados.</p>
+            <div className="border-t border-gray-300 pt-6 text-xs">
+              <p className="text-travel-blue">Copyright © 2024 BR VIAGENS CLUBE. Todos os direitos reservados.</p>
             </div>
           </div>
         </div>
