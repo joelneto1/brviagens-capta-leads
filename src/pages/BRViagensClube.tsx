@@ -248,10 +248,10 @@ const BRViagensClube = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-travel-blue">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-travel-blue text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
               Perguntas frequentes
             </h2>
             
@@ -306,8 +306,9 @@ const BRViagensClube = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-travel-orange">
-        <div className="container mx-auto px-4 text-center text-white">
+      <section className="py-20 relative overflow-hidden" style={{backgroundImage: 'url(/lovable-uploads/da47a96b-fe80-4e5a-b399-a20035af8df5.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="absolute inset-0 bg-travel-orange/80"></div>
+        <div className="container mx-auto px-4 text-center text-white relative z-10">
           <div className="max-w-4xl mx-auto space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               MAIOR SEGURANÇA
