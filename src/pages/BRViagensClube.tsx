@@ -213,9 +213,34 @@ const BRViagensClube = () => {
                 Feedback dos nossos clientes!
               </h4>
               <div className="grid grid-cols-2 gap-4">
-                {[1, 2, 3, 4].map(i => <div key={i} className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
-                    <Users className="w-12 h-12 text-gray-400" />
-                  </div>)}
+                <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
+                  <img 
+                    src="/lovable-uploads/bb3526c0-580b-48fe-90a3-7dcd960dc6ab.png" 
+                    alt="Feedback de Marcia Martins - 5 estrelas"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
+                  <img 
+                    src="/lovable-uploads/2dc5d5aa-c966-4793-a6b1-77c16364d8d7.png" 
+                    alt="Feedback de cliente - 5 estrelas"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
+                  <img 
+                    src="/lovable-uploads/3cf26d6a-29ef-4e7f-a1de-c9319f8f311c.png" 
+                    alt="Feedback de Thiago França - 5 estrelas"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
+                  <img 
+                    src="/lovable-uploads/97bb7a11-c152-4cab-a8c8-cffa05fbc950.png" 
+                    alt="Feedback de Any Matos - 5 estrelas"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
