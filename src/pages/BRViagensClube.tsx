@@ -104,7 +104,7 @@ const BRViagensClube = () => {
                   Segurança
                 </h3>
                 <p className="text-gray-600">
-                  Procuramos ofertas apenas de grandes companhias e sites confiáveis.
+                  Procuramos excelentes oportunidades diariamente para você.
                 </p>
               </CardContent>
             </Card>
@@ -178,7 +178,7 @@ const BRViagensClube = () => {
                   Os grupos são gratuitos?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
-                  Sim! Nossos grupos são 100% gratuitos e sempre será. Você não paga nada para receber as melhores ofertas de viagem.
+                  Sim! Nossos grupos são 100% gratuitos. Você não paga nada para receber as melhores ofertas de viagem.
                 </AccordionContent>
               </AccordionItem>
               
@@ -187,7 +187,7 @@ const BRViagensClube = () => {
                   Como são selecionadas as promoções?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
-                  Nossa equipe especializada monitora constantemente as principais promoções nas companhias aéreas e nos bons hotéis para encontrar as melhores ofertas e repassar exclusivamente para nossos membros.
+                  Nossa equipe especializada monitora constantemente as principais companhias aéreas e agências de viagem para encontrar as melhores ofertas e repassar exclusivamente para nossos membros.
                 </AccordionContent>
               </AccordionItem>
               
@@ -196,7 +196,7 @@ const BRViagensClube = () => {
                   É confiável comprar pelo grupo?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
-                  Absolutamente! Temos +1.500 clientes atendidos. Você pode consultar todos os feedbacks dos nossos clientes nos canais de busca. Somos uma empresa que atua há mais de 4 anos no mercado do turismo.
+                  Absolutamente! Trabalhamos apenas com empresas credenciadas e sites oficiais. Todos os links são verificados e direcionam para as páginas oficiais das companhias.
                 </AccordionContent>
               </AccordionItem>
               
@@ -214,7 +214,7 @@ const BRViagensClube = () => {
                   Qual a maior vantagem de entrar no grupo?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
-                  Você recebe ofertas exclusivas em primeira mão, muitas vezes com descontos que não estão disponíveis publicamente, além disso, você comprando com a gente, vai ter acompanhamento e suporte durante a pré e pós-viagem.
+                  Você recebe ofertas exclusivas em primeira mão, muitas vezes com descontos que não estão disponíveis publicamente, além de dicas valiosas de viagem da nossa comunidade.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -230,7 +230,7 @@ const BRViagensClube = () => {
               MAIOR SEGURANÇA
             </h2>
             <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-              Somos credenciados e cadastrado no CADASTUR. Nossos links são 100% confiáveis.
+              Somos credenciados nas maiores companhias aéreas e nossos links são verificados e 100% confiáveis.
             </p>
             
             <div className="mb-8">
