@@ -333,9 +333,10 @@ const BRViagensClube = () => {
       </section>
 
       {/* Rodapé */}
-      <footer className="bg-travel-blue text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-6">
+      <footer className="relative overflow-hidden py-12" style={{backgroundImage: 'url(/lovable-uploads/da47a96b-fe80-4e5a-b399-a20035af8df5.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="absolute inset-0 bg-travel-blue/80"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center space-y-6 text-white">
             <div className="flex justify-center mb-4">
               <img src="/lovable-uploads/892dc44a-d2ea-4a43-bffb-440669d76a30.png" alt="BR Viagens Clube" className="h-16" />
             </div>
