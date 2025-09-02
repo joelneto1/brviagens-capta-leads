@@ -334,7 +334,6 @@ const BRViagensClube = () => {
 
       {/* Rodapé */}
       <footer className="relative overflow-hidden py-12" style={{backgroundImage: 'url(/lovable-uploads/da47a96b-fe80-4e5a-b399-a20035af8df5.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-        <div className="absolute inset-0 bg-travel-blue/80"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center space-y-6 text-white">
             <div className="flex justify-center mb-4">
