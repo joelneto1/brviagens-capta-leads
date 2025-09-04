@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { TravelButton } from "@/components/ui/travel-button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -6,9 +6,24 @@ import { Plane, Shield, PiggyBank, Users, Star, Mail, ExternalLink, MessageCircl
 import familySmartphone from "@/assets/family-smartphone.jpg";
 const BRViagensClube = () => {
   console.log('[BRViagens] Página carregada');
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = () => {
+    const query = searchQuery.toLowerCase();
+    if (query.includes('promoção') || query.includes('grupo') || query.includes('whatsapp')) {
+      document.querySelector('#grupos')?.scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('faq') || query.includes('pergunta')) {
+      document.querySelector('#faq')?.scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('contato') || query.includes('fale')) {
+      document.querySelector('#contato')?.scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('benefício') || query.includes('vantagem')) {
+      document.querySelector('#beneficios')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const handleWhatsAppClick = () => {
     console.log('[BRViagens] CTA WhatsApp clicado');
-    window.open('https://wa.me/5511999999999', '_blank');
+    window.open('https://wa.me/5582993339736', '_blank');
   };
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -26,12 +41,27 @@ const BRViagensClube = () => {
           {/* Navigation */}
           <div className="flex items-center gap-4 md:gap-6">
             <a 
-              href="#contato" 
+              href="https://wa.me/5582993339736" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-travel-blue hover:text-travel-orange transition-colors font-medium text-sm md:text-base"
             >
               FALE CONOSCO
             </a>
-            <Search className="w-4 h-4 md:w-5 md:h-5 text-travel-blue cursor-pointer hover:text-travel-orange transition-colors" />
+            <div className="flex items-center gap-2">
+              <input 
+                type="text"
+                placeholder="Buscar..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                className="hidden md:block px-3 py-1 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-travel-blue"
+              />
+              <Search 
+                className="w-4 h-4 md:w-5 md:h-5 text-travel-blue cursor-pointer hover:text-travel-orange transition-colors" 
+                onClick={handleSearch}
+              />
+            </div>
           </div>
         </div>
       </header>
@@ -58,7 +88,7 @@ const BRViagensClube = () => {
         <div className="container mx-auto px-4 py-12 md:py-16">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Column - Social Proof and Visual */}
-            <div className="relative order-2 lg:order-1">
+            <div className="relative order-2 lg:order-1" id="grupos">
               <div className="relative max-w-sm md:max-w-md mx-auto">
                 <img 
                   src={familySmartphone} 
@@ -100,8 +130,8 @@ const BRViagensClube = () => {
                       size="lg" 
                       onClick={() => {
                         console.log('[BRViagens] CTA WhatsApp Maceió clicado');
-                        window.open('https://wa.me/5511999999999', '_blank');
-                      }} 
+                        window.open('https://chat.whatsapp.com/K3eKlsSmXbq1NNdsWMbm5z?mode=ems_copy_c', '_blank');
+                      }}
                       className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                       aria-label="Entrar no grupo de WhatsApp de Maceió"
                     >
@@ -114,8 +144,8 @@ const BRViagensClube = () => {
                       size="lg" 
                       onClick={() => {
                         console.log('[BRViagens] CTA WhatsApp Aracaju clicado');
-                        window.open('https://wa.me/5511999999999', '_blank');
-                      }} 
+                        window.open('https://chat.whatsapp.com/JfGLF48u9fELnsHMZ1AroY?mode=ems_copy_c', '_blank');
+                      }}
                       className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                       aria-label="Entrar no grupo de WhatsApp de Aracaju"
                     >
@@ -128,8 +158,8 @@ const BRViagensClube = () => {
                       size="lg" 
                       onClick={() => {
                         console.log('[BRViagens] CTA WhatsApp Recife clicado');
-                        window.open('https://wa.me/5511999999999', '_blank');
-                      }} 
+                        window.open('https://chat.whatsapp.com/ImM0lJ4vgpNETZnwN9srvy?mode=ems_copy_c', '_blank');
+                      }}
                       className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                       aria-label="Entrar no grupo de WhatsApp de Recife"
                     >
@@ -142,8 +172,8 @@ const BRViagensClube = () => {
                       size="lg" 
                       onClick={() => {
                         console.log('[BRViagens] CTA WhatsApp Fortaleza clicado');
-                        window.open('https://wa.me/5511999999999', '_blank');
-                      }} 
+                        window.open('https://chat.whatsapp.com/HZzoIRbYV84JRYBIRU0u6z?mode=ems_copy_c', '_blank');
+                      }}
                       className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                       aria-label="Entrar no grupo de WhatsApp de Fortaleza"
                     >
@@ -156,8 +186,8 @@ const BRViagensClube = () => {
                       size="lg" 
                       onClick={() => {
                         console.log('[BRViagens] CTA WhatsApp São Paulo clicado');
-                        window.open('https://wa.me/5511999999999', '_blank');
-                      }} 
+                        window.open('https://chat.whatsapp.com/IAVIjGGSpiLCEgXHSQr55j?mode=ems_copy_c', '_blank');
+                      }}
                       className="w-full md:col-span-2 lg:col-span-1 xl:col-span-2 bg-travel-blue hover:bg-travel-blue/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                       aria-label="Entrar no grupo de WhatsApp de São Paulo"
                     >
@@ -199,7 +229,7 @@ const BRViagensClube = () => {
       </section>
 
       {/* Benefícios */}
-      <section className="py-12 md:py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50" id="beneficios">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-travel-blue mb-3 md:mb-4">
@@ -314,7 +344,7 @@ const BRViagensClube = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-travel-blue">
+      <section className="py-20 bg-travel-blue" id="faq">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
@@ -393,8 +423,8 @@ const BRViagensClube = () => {
                   size="lg" 
                   onClick={() => {
                     console.log('[BRViagens] CTA WhatsApp Maceió clicado');
-                    window.open('https://wa.me/5511999999999', '_blank');
-                  }} 
+                    window.open('https://chat.whatsapp.com/K3eKlsSmXbq1NNdsWMbm5z?mode=ems_copy_c', '_blank');
+                  }}
                   className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
                 >
                   <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
@@ -406,8 +436,8 @@ const BRViagensClube = () => {
                   size="lg" 
                   onClick={() => {
                     console.log('[BRViagens] CTA WhatsApp Aracaju clicado');
-                    window.open('https://wa.me/5511999999999', '_blank');
-                  }} 
+                    window.open('https://chat.whatsapp.com/JfGLF48u9fELnsHMZ1AroY?mode=ems_copy_c', '_blank');
+                  }}
                   className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
                 >
                   <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
@@ -419,8 +449,8 @@ const BRViagensClube = () => {
                   size="lg" 
                   onClick={() => {
                     console.log('[BRViagens] CTA WhatsApp Recife clicado');
-                    window.open('https://wa.me/5511999999999', '_blank');
-                  }} 
+                    window.open('https://chat.whatsapp.com/ImM0lJ4vgpNETZnwN9srvy?mode=ems_copy_c', '_blank');
+                  }}
                   className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
                 >
                   <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
@@ -432,8 +462,8 @@ const BRViagensClube = () => {
                   size="lg" 
                   onClick={() => {
                     console.log('[BRViagens] CTA WhatsApp Fortaleza clicado');
-                    window.open('https://wa.me/5511999999999', '_blank');
-                  }} 
+                    window.open('https://chat.whatsapp.com/HZzoIRbYV84JRYBIRU0u6z?mode=ems_copy_c', '_blank');
+                  }}
                   className="bg-white hover:bg-travel-blue text-travel-blue hover:text-white w-full py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300"
                 >
                   <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
@@ -445,8 +475,8 @@ const BRViagensClube = () => {
                   size="lg" 
                   onClick={() => {
                     console.log('[BRViagens] CTA WhatsApp São Paulo clicado');
-                    window.open('https://wa.me/5511999999999', '_blank');
-                  }} 
+                    window.open('https://chat.whatsapp.com/IAVIjGGSpiLCEgXHSQr55j?mode=ems_copy_c', '_blank');
+                  }}
                   className="bg-white hover:bg-travel-orange text-travel-orange hover:text-white w-full md:col-span-2 lg:col-span-1 py-3 md:py-4 text-sm md:text-base font-bold transition-all duration-300 border-2 border-travel-orange"
                 >
                   <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
@@ -459,7 +489,7 @@ const BRViagensClube = () => {
       </section>
 
       {/* Rodapé */}
-      <footer className="relative overflow-hidden py-8 md:py-12" style={{backgroundImage: 'url(/lovable-uploads/da47a96b-fe80-4e5a-b399-a20035af8df5.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <footer className="relative overflow-hidden py-8 md:py-12" id="contato" style={{backgroundImage: 'url(/lovable-uploads/da47a96b-fe80-4e5a-b399-a20035af8df5.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center space-y-4 md:space-y-6 text-white">
             <div className="flex justify-center mb-3 md:mb-4">
