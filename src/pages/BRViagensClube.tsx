@@ -281,29 +281,29 @@ const BRViagensClube = () => {
               <div className="grid grid-cols-2 gap-3 md:gap-4">
                 <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
                   <img 
-                    src="/lovable-uploads/bb3526c0-580b-48fe-90a3-7dcd960dc6ab.png" 
-                    alt="Feedback de Marcia Martins - 5 estrelas"
+                    src="/lovable-uploads/08d16b41-49a1-4ec0-ab2a-d81a0d57a5b5.png" 
+                    alt="Feedback de Anna Morais - 5 estrelas"
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
                   <img 
-                    src="/lovable-uploads/2dc5d5aa-c966-4793-a6b1-77c16364d8d7.png" 
-                    alt="Feedback de cliente - 5 estrelas"
+                    src="/lovable-uploads/79f339c6-d18d-4988-9d0a-5574035ed565.png" 
+                    alt="Feedback de Murilo Alves e Any Matos - 5 estrelas"
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
                   <img 
-                    src="/lovable-uploads/3cf26d6a-29ef-4e7f-a1de-c9319f8f311c.png" 
-                    alt="Feedback de Thiago França - 5 estrelas"
+                    src="/lovable-uploads/d62aa404-c646-4e57-b352-7c5bb858d8d5.png" 
+                    alt="Feedback de Michelen Souza - 5 estrelas"
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow">
                   <img 
-                    src="/lovable-uploads/97bb7a11-c152-4cab-a8c8-cffa05fbc950.png" 
-                    alt="Feedback de Any Matos - 5 estrelas"
+                    src="/lovable-uploads/2fc6ab94-2380-4ea5-bd8a-8994005cbdd3.png" 
+                    alt="Feedback de Hstefanevianadossantos Viana e Kella Carvalho - 5 estrelas"
                     className="w-full h-auto object-cover"
                   />
                 </div>
