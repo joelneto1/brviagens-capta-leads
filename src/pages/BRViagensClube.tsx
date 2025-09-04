@@ -336,7 +336,7 @@ const BRViagensClube = () => {
                   Como são selecionadas as promoções?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
-                  Nossa equipe especializada monitora constantemente as principais companhias aéreas e agências de viagem para encontrar as melhores ofertas e repassar exclusivamente para nossos membros.
+                  Nossa equipe especializada monitora constantemente as principais promoções do mercado para repassar exclusivamente para nossos membros em primeira mão.
                 </AccordionContent>
               </AccordionItem>
               
@@ -345,7 +345,7 @@ const BRViagensClube = () => {
                   É confiável comprar pelo grupo?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
-                  Absolutamente! Trabalhamos apenas com empresas credenciadas e sites oficiais. Todos os links são verificados e direcionam para as páginas oficiais das companhias.
+                  Absolutamente! Somos certificados pelo Cadastur e somos uma empresa que atua há mais de 4 anos nesse mercado do turismo.
                 </AccordionContent>
               </AccordionItem>
               
@@ -363,7 +363,7 @@ const BRViagensClube = () => {
                   Qual a maior vantagem de entrar no grupo?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
-                  Você recebe ofertas exclusivas em primeira mão, muitas vezes com descontos que não estão disponíveis publicamente, além de dicas valiosas de viagem da nossa comunidade.
+                  Você recebe ofertas exclusivas em primeira mão, muitas vezes com descontos que chegam primeiro pra gente, além de dicas valiosas de viagem da nossa comunidade.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
