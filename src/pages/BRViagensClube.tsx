@@ -147,7 +147,7 @@ const BRViagensClube = () => {
                       className="w-full bg-travel-orange hover:bg-travel-orange/90 text-white font-bold py-3 px-4 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                       aria-label="Entrar no grupo de WhatsApp de Fortaleza"
                     >
-                      <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                      <MessageCircle className="w-5 h-5 md:w-6 md:h-6 mr-2" />
                       GRUPO PROMOÇÕES - FORTALEZA
                     </TravelButton>
                     
